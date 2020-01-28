@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+*{
+	box-sizing: border-box;
+	
+}
+body{
+	background-color: hsl(218, 28%, 13%);
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.875rem;
+	color: #fff;
+    }
+.container{
+	margin: 0 auto;
+	width: 1200px;
+	max-width: 100%;
+   }
+ header{
+ 	background-color: hsl(217, 28%, 15%);
+ 	background-image: url('images/bg-curvy-desktop.svg');
+ 	background-position: left bottom;
+ 	background-size: contain;
+ 	background-repeat: no-repeat;
+ 	padding-bottom: 80px;
+    }
+ img{
+ 	max-width: 100%;
+    }
+ /*nav styleing*/
+.navList{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+    }
+.navMenu{
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+    }
+.navMenu li a{
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-family: 'Raleway', sans-serif;
+   }
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    }
+/*Intro*/
+.intro{
+	margin: 20px auto;
+	width: 600px;
+	max-width: 100%;
+	text-align: center;
+    }
+h1{
+	line-height: 1.5;
+    }
+p{
+	line-height: 1.5;
+   }
+.btn{
+	padding: 20px 80px;
+	background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%)) ;
+	border-radius: 50px;
+	border: none;
+	color: #fff;
+    }
+.features-Container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+    }
+.features{
+	margin: 40px;
+	width: 400px;
+	text-align: center;
+    }
+.productive{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;	
+    }
+.productive-img{
+	width: 450px;
+	margin-right: 50px;
+    }
+.productive-text{
+	width: 450px;
+    }
+.productive-text a{
+	border-bottom: 1px solid hsl(176, 68%, 64%);
+	color: hsl(176, 68%, 64%);
+	text-decoration: none;
+	padding: 5px;
+}
+
+
+ /*testimonials*/
+
+.testimonials{
+	display: flex;
+	
+	justify-content: center;
+	margin: 40px auto;
+	
+    }
+ .quotes{
+ 	height: 20px
+ 	width:20px;
+ 	margin-bottom: -60px;
+ }
+.testimonial{
+	background-color: hsl(219, 30%, 18%);
+	border-radius: 5px;
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+	padding: 20px;
+	margin: 10px;
+	width: 400px;
+	max-width: 100%;
+	
+    }
+.testimonial .user{
+	display: flex;
+}
+.testimonial .user img{
+	border-radius: 50%;
+	margin-right: 10px;
+	height: 50px;
+	width: 50px;
+}
+.testimonial .user h5{
+	margin: 0;
+}
+.testimonial .user h6{
+	margin: 0;
+	opacity: 0.7;
+	margin: 5px 0;
+}
+/*Forms*/
+form{
+	background-color: hsl(217, 28%, 15%);
+	width: 800px;
+	max-width: 100%;
+	margin: 0 auto -100px;
+	padding: 40px;
+	text-align: center;
+	z-index: 1;
+	position: relative;
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+.form-control{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.form-control input{
+	flex: 1;
+	border-radius: 50px;
+	padding: 16px 60px;
+	border: 0;
+	margin: 20px 20px 20px 0;
+
+}
+footer{
+	background-color: hsl(216, 53%, 9%);
+	padding: 150px 0 60px;
+}
+footer .flex{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 15px;
+	align-items: flex-start;
+	
+}
+.footer-section{
+	flex: 1;
+	margin-top: 10px;
+	padding: 10px;
+}
+.footer-section p{
+	margin: 0 0 0 10px;
+}
+.footer-section ul{
+	padding: 0;
+	padding-left: 10px;
+	list-style-type: none;
+}
+.footer-section ul a{
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 15px;
+	text-decoration: none;
+}
+.footer-section .social-icons{
+	display: flex;
+}
+.footer-section .social-icons a{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	color: white;
+	border: 2px solid #fff;
+	padding: 10px;
+	margin-left:10px;
+	text-decoration: none;
+}
+@media screen and (max-width: 767px){
+	.btn{
+		width: 100%;
+	}
+	.logo{
+		width: 80px;
+	}
+	.navMenu li a{
+		padding: 10px;
+		font-size: 14px;
+	}
+	header{
+		padding-bottom: 0;
+		background-image: url('images/bg-curvy-mobile.svg');
+	}
+	.testimonials{
+		flex-wrap: wrap;
+	}
+	.productive-img{
+		margin: 0 auto;
+    }
+    .form-control input{
+    	margin: 20px 0;
+    }
+    .footer-section{
+    	flex:auto;
+    	width: 100%;
+    }
+}
+	
